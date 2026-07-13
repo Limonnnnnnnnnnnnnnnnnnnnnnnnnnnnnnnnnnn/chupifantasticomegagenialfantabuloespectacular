@@ -257,6 +257,7 @@ No te voy a chivar nada pa que lo descubras por tu cuenta pero ya veras eh, tu t
           spn1.innerHTML = lemons;
         }
         else if (lemons == 0) {
+          wompwomp.play()
           alert("No tienes limones pa vender tolai")
         }
       }
@@ -268,15 +269,19 @@ No te voy a chivar nada pa que lo descubras por tu cuenta pero ya veras eh, tu t
           chiqulin.play();
         }
         else if (lemocoins < 10) {
+          wompwomp.play()
           alert("No tienes suficientes lemocoins pa comprar eto, pobretón")
         }
       }
+    chiqulin.play();
     spnsounds.innerHTML = "";
     }
     else if (lemocoins < 15) {
       alert("No tienes suficientes lemocoins pa comprar eto, pobretón")
     }
-    chiqulin.play();
   }
-
+</script>
+<script>
+  const wompwomp = new Audio;
+  wompwomp.src="https://github.com/Limonnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn/chupifantasticomegagenialfantabuloespectacular/raw/refs/heads/master/Sonidos/womp%20wompw.mp3"
 </script>
