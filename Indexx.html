@@ -143,6 +143,10 @@ No te voy a chivar nada pa que lo descubras por tu cuenta pero ya veras eh, tu t
   wompwomp.src="https://github.com/Limonnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn/chupifantasticomegagenialfantabuloespectacular/raw/refs/heads/master/Sonidos/womp%20wompw.mp3";
   const chiqulin = new Audio;
   chiqulin.src = "https://github.com/Limonnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn/chupifantasticomegagenialfantabuloespectacular/raw/refs/heads/master/Sonidos/Chiklin.mp3";
+  const coin = new Audio;
+  coin.src = "https://github.com/Limonnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn/chupifantasticomegagenialfantabuloespectacular/raw/refs/heads/master/Sonidos/coin.mp3"
+  const pop = new Audio;
+  pop.src = "https://github.com/Limonnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn/chupifantasticomegagenialfantabuloespectacular/raw/refs/heads/master/Sonidos/pop.mp3"
 
   function autoclicker() {
     if ((power == 1)) {
@@ -171,6 +175,9 @@ No te voy a chivar nada pa que lo descubras por tu cuenta pero ya veras eh, tu t
       lemons++;
       spn1.innerHTML = lemons;
     }
+    if (sound == 1) {
+      pop.play();
+    }
   }
   btnventa.onclick = function() {
     if (lemons > 0) {
@@ -181,6 +188,9 @@ No te voy a chivar nada pa que lo descubras por tu cuenta pero ya veras eh, tu t
     }
     else if (lemons == 0) {
       alert("pero si no tienes limones que vender, tolai")
+    }
+    if (sound == 1) {
+      coin.play();
     }
   }
   btnautoclick.onclick = function() {
